@@ -1,3 +1,5 @@
+/* ---------- flashcards ----------*/
+
 const flashcards = [
   {
       answer: "Ranunculus",
@@ -230,7 +232,13 @@ const flashcards = [
   // Add more flashcards as needed
 ];
 
-       // Function to shuffle an array
+/* ---------- Cached Elements ----------*/
+
+const container = document.getElementById("flashcard-container");
+const nextButton = document.getElementById("next-button");
+
+// Function to shuffle flashcards array. Shouldn't ever need changed.
+
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -238,11 +246,8 @@ function shuffleArray(array) {
   }
 }
 
-const container = document.getElementById("flashcard-container");
-const nextButton = document.getElementById("next-button");
-console.log(nextButton)
-
 // Combine and shuffle all the cards from both categories
+
 let combinedCards = [];
 flashcards.forEach(category => {
   category.images.forEach(image => {
