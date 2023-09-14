@@ -1,3 +1,23 @@
+body {
+  background-color: #DAD6D6;
+}
+
+button {
+  display: block;
+  background-color: #65DEF1;
+  color: #55444f;
+  border-color: #55444f;
+  margin: 10px auto;
+  width: 150px;
+  height: 75px;
+  font-size: 24px;
+  border-radius: 25px;
+}
+
+button:hover {
+  background-color: #57bfcf;
+}
+
 .flashcard {
   width: 600px;
   height: 400px;
@@ -10,6 +30,7 @@
   transition: transform 0.3s;
   display: block;
   perspective: 1000px;
+  box-shadow: 10px 10px 5px rgb(169, 168, 168);
 }
 
 .flashcard .card-inner {
